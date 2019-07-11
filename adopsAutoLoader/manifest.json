@@ -1,0 +1,14 @@
+{
+	"name": "adopsAutoLoader",
+	"version": "1.0",
+	"description": "Automatically loads board items in Azure Dev Ops.",
+	"content_scripts": 
+	[
+		{
+			"matches": ["https://dev.azure.com/*_boards/board/*"],
+			"js": ["jquery-3.4.1.min.js", "contentScript.js"],
+			"run_at": "document_end"
+		}
+	],
+	"manifest_version": 2
+}
